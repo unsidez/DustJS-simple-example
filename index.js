@@ -12,7 +12,7 @@ dust.config.whitespace = true;
 let files = glob.sync("./dustTemplates/*.tl");
 
 //Loop trough each file
-files.forEach(function(file, index) {
+files.forEach((file, index) => {
 	//Lets define a key to associate the file content
 	let key = file.replace(path.extname(file), '');
 
